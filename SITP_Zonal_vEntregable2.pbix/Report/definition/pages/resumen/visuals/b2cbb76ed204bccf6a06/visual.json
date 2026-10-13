@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b2cbb76ed204bccf6a06",
+  "position": {
+    "x": 20.58325935107791,
+    "y": 793.14159366153547,
+    "z": 0,
+    "height": 27.444345801437212,
+    "width": 1239.11221293489,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Trabajo académico · Politécnico Grancolombiano · Datos abiertos de TransMilenio S.A. (2026) · Uso exclusivamente educativo",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

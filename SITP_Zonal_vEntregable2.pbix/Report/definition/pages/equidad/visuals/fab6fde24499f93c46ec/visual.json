@@ -1,0 +1,280 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "fab6fde24499f93c46ec",
+  "position": {
+    "x": 20.58325935107791,
+    "y": 543.39804686845685,
+    "z": 0,
+    "height": 244.25467763279119,
+    "width": 1239.11221293489,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_estacion"
+                    }
+                  },
+                  "Property": "estacion_nombre"
+                }
+              },
+              "queryRef": "dim_estacion.estacion_nombre",
+              "nativeQueryRef": "estacion_nombre"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "Validaciones Estacion"
+                }
+              },
+              "queryRef": "agg_hora_ruta.Validaciones Estacion",
+              "nativeQueryRef": "Validaciones Estacion"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "Validaciones Estacion Subsidiadas"
+                }
+              },
+              "queryRef": "agg_hora_ruta.Validaciones Estacion Subsidiadas",
+              "nativeQueryRef": "Validaciones Estacion Subsidiadas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "% Subsidiado Estacion"
+                }
+              },
+              "queryRef": "agg_hora_ruta.% Subsidiado Estacion",
+              "nativeQueryRef": "% Subsidiado Estacion"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "agg_hora_ruta"
+                  }
+                },
+                "Property": "Validaciones Estacion"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "480D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dim_estacion.estacion_nombre"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "250D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "agg_hora_ruta.Validaciones Estacion"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "250D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "agg_hora_ruta.Validaciones Estacion Subsidiadas"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "250D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "agg_hora_ruta.% Subsidiado Estacion"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Estaciones por validaciones y % subsidiado'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#333333'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Responde a los filtros de Fecha y Perfil'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#666666'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "881ea86684d9f1a2a5e9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_estacion"
+              }
+            },
+            "Property": "estacion_nombre"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "23c135aee660af263dfb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "agg_hora_ruta"
+              }
+            },
+            "Property": "Validaciones Estacion"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5d7ce1b2fec9bcbf9a97",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "agg_hora_ruta"
+              }
+            },
+            "Property": "% Subsidiado Estacion"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

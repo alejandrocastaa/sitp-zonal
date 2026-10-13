@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "1b31025553b872d6ab08",
+  "position": {
+    "x": 660,
+    "y": 544,
+    "z": 0,
+    "height": 244,
+    "width": 600,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_ruta"
+                    }
+                  },
+                  "Property": "linea_nombre"
+                }
+              },
+              "queryRef": "dim_ruta.linea_nombre",
+              "nativeQueryRef": "linea_nombre"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_ruta"
+                    }
+                  },
+                  "Property": "ruta_nombre"
+                }
+              },
+              "queryRef": "dim_ruta.ruta_nombre",
+              "nativeQueryRef": "ruta_nombre"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "Total Validaciones"
+                }
+              },
+              "queryRef": "agg_hora_ruta.Total Validaciones",
+              "nativeQueryRef": "Total Validaciones"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "Recaudo Total"
+                }
+              },
+              "queryRef": "agg_hora_ruta.Recaudo Total",
+              "nativeQueryRef": "Recaudo Total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "agg_hora_ruta"
+                    }
+                  },
+                  "Property": "% Validaciones con Cobro"
+                }
+              },
+              "queryRef": "agg_hora_ruta.% Validaciones con Cobro",
+              "nativeQueryRef": "% Validaciones con Cobro"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "agg_hora_ruta"
+                  }
+                },
+                "Property": "Recaudo Total"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle por ruta'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#333333'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "27fd8f3154d6cee3e5f0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_ruta"
+              }
+            },
+            "Property": "linea_nombre"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "96a0f85ca1bf66f6d2de",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_ruta"
+              }
+            },
+            "Property": "ruta_nombre"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f7672a724f567779cbdd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "agg_hora_ruta"
+              }
+            },
+            "Property": "Total Validaciones"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cb7245e7aaa449075706",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "agg_hora_ruta"
+              }
+            },
+            "Property": "Recaudo Total"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "dad56e8277b3d4388a43",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "agg_hora_ruta"
+              }
+            },
+            "Property": "% Validaciones con Cobro"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
