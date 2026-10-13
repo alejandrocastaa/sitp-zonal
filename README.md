@@ -46,6 +46,6 @@ El ETL registra los controles de calidad: conciliación de filas (leídas = carg
 
 ## Integrantes
 
-- Alejandro Castaño (@alejandrocastaa)
-- _Nombre integrante 2_
-- _Nombre integrante 3_
+- Alejandro Castañeda (@alejandrocastaa)
+- Camilo Torres P]alacios
+- Marilyn Sapuyes 
